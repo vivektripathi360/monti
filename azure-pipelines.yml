@@ -1,10 +1,18 @@
+trigger:  none
 
-trigger:
-- main
-
-pool:
-  vivek
+pool:  vivek
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: TerraformInstaller@1
+  inputs:
+    terraformVersion: 'latest'
+- task: TerraformTask@5
+  inputs:
+   provider: 'azurerm'
+   command: 'init'
+   backendServiceArm: 'Azure subscription 1(f0c6c28a-7429-42b3-aefa-63439e20a651)'
+   backendAzureRmOverrideSubscriptionID: 'f0c6c28a-7429-42b3-aefa-63439e20a651'
+   backendAzureRmResourceGroupName: 'ram'
+   backendAzureRmStorageAccountName: 'stg987123987'
+   backendAzureRmContainerName: 'vhds'
+   backendAzureRmKey: 'tf/terraform.tfstate'
