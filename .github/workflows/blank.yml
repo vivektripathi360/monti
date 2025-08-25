@@ -10,7 +10,7 @@ on:
 jobs:
   vivektripathi: 
     name: vivek tripathi
-    runs-on: monti
+    runs-on: [self-hosted, Windows, X64]
     steps:
     - name: monti Rocks!
       run: echo montiji
