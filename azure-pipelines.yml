@@ -1,5 +1,10 @@
 trigger:  none
-
+- task: TerraformTask@5
+  inputs:
+    provider: 'azurerm'
+    command: 'plan'
+    environmentServiceNameAzureRM: 'Azure subscription 1(f0c6c28a-7429-42b3-aefa-63439e20a651)'
+    environmentAzureRmOverrideSubscriptionID: 'f0c6c28a-7429-42b3-aefa-63439e20a651'
 pool:  vivek
 
 steps:
