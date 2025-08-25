@@ -1,0 +1,22 @@
+name: "vivek"
+
+on: 
+  push:
+    branches: 
+      - 'feature/**'
+      - 'main'
+      - 'hotfix/**'
+
+jobs:
+  vivektripathi: 
+    name: vivek tripathi
+    runs-on: monti
+    steps:
+    - name: monti Rocks!
+      run: echo montiji
+    
+    - name: jatintripathi
+      run: echo jatin
+
+    - name: monti Rocks!
+      run: echo montiji
