@@ -13,7 +13,7 @@ steps:
    backendServiceArm: 'Azure subscription 1(f0c6c28a-7429-42b3-aefa-63439e20a651)'
    backendAzureRmOverrideSubscriptionID: 'f0c6c28a-7429-42b3-aefa-63439e20a651'
    backendAzureRmResourceGroupName: 'ram'
-   backendAzureRmStorageAccountName: 'stg987123987'
+   backendAzureRmStorageAccountName: 'stg981'
    backendAzureRmContainerName: 'vhds'
    backendAzureRmKey: 'tf/terraform.tfstate'
 - task: TerraformTask@5
