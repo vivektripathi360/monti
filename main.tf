@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "rg" {
-  count = 2
+  count = 1
   name     = var.rg_name[count.index]
   location = var.location[count.index] 
 }
