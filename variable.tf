@@ -1,10 +1,10 @@
 variable "rg_name" {
   type    = list(string)
-  default = ["ram", "lakshman", "bharat"]
+  default = ["ram"]
   
 }
 
 variable "location" {
   type    = list(string)
-  default = ["East US", "West US", "Central US"]
+  default = ["East US"]
 }
